@@ -1,0 +1,25 @@
+# X 계정 분석
+
+There are many websites designed to give you a qualitative analysis of your X account. While X already gives you an **analytics** section, it's more focused to show your numbers on your performance.
+
+하지만 질적 분석은 성과 수치가 아니라 게시물의 품질에 초점을 맞춥니다. 이런 분석에서 얻을 수 있는 인사이트 예시:
+
+- 내 게시물이 바이럴되는 패턴은 무엇인가?
+- 어떤 주제의 글이 가장 많은 참여를 얻는가?
+- 왜 어떤 게시물은 1000+ 좋아요를 받는데, 어떤 게시물은 5 미만의 좋아요만 받을까? 내가 무엇을 잘못하고 있는가?
+
+이런 통계를 제공하는 웹사이트와 앱이 많이 있지만, 대부분 수치에 집중합니다. AI와 대화하며 성과를 이해하게 해주는 사이트는 몇 군데에 불과합니다.
+
+하지만 이제 OpenClaw을 사용하면, 이러한 분석을 월 10-50달러 구독료 없이 직접 수행할 수 있습니다.
+
+## 필요한 스킬
+
+Bird Skill. `clawhub install bird` (기본 번들로 제공됩니다)
+
+## 설정 방법
+
+흐름은 다음과 같습니다:
+1. Bird 스킬이 작동하는지 확인하세요.
+2. 보안과 격리를 위해 ClawdBot용 새 계정을 만드는 것이 좋습니다.
+3. X 계정으로 인증하세요. Chrome/Brave에서 x.com에 로그인한 뒤, OpenClaw가 계정에 접근할 수 있도록 적절한 쿠키 정보(`auth-token`, `ct0`)를 제공하세요.
+4. OpenClaw에게 실제 계정을 살펴보고 최근 N개의 트윗을 가져오게 한 다음, 원하는 질문을 하세요. 또는 특정 스크립트를 작성해 달라고 요청할 수도 있습니다.
