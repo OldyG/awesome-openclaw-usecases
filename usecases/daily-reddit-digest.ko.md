@@ -1,5 +1,5 @@
-# 일간 Reddit 요약
-Run a daily digest everyday to give you the top performing posts from your favourite subreddits.
+﻿# 일간 Reddit 요약
+매일 선호하는 서브레딧의 인기 게시물을 요약해주는 일일 다이제스트를 실행합니다.
 
 사용 용도:
 

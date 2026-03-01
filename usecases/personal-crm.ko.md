@@ -1,4 +1,4 @@
-# 개인 CRM, 자동 연락처 발견
+﻿# 개인 CRM, 자동 연락처 발견
 
 누가 언제 누구를 만나 무엇을 논의했는지 수동으로 기록하는 것은 불가능에 가깝습니다. 중요한 후속 조치가 누락되고, 중요한 회의 전에 맥락을 잊어버리곤 합니다.
 
@@ -11,7 +11,7 @@
 
 ## 필요한 기술
 
-- `gog` CLI (for Gmail and Google Calendar)
+- `gog` CLI (Gmail 및 Google Calendar용)
 - 맞춤형 CRM 데이터베이스 (SQLite 또는 유사한 것) 또는 사용 가능한 경우 [crm-query](https://clawhub.ai) 스킬 사용
 - CRM 질의를 위한 Telegram 토픽
 
@@ -29,8 +29,8 @@ CREATE TABLE contacts (
   notes TEXT
 );
 ```
-2. Set up a Telegram topic called "personal-crm" for queries.
-3. Prompt OpenClaw:
+2. Telegram에서 "personal-crm"이라는 토픽을 만드세요.
+3. OpenClaw에 다음을 프롬프트하세요:
 ```text
 Run a daily cron job at 6 AM to:
 1. Scan my Gmail and Calendar for the past 24 hours

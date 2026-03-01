@@ -1,6 +1,6 @@
-# X 계정 분석
+﻿# X 계정 분석
 
-There are many websites designed to give you a qualitative analysis of your X account. While X already gives you an **analytics** section, it's more focused to show your numbers on your performance.
+X 계정의 정성적 분석을 제공하는 웹사이트는 많습니다. X는 이미 **분석** 섹션을 제공하지만, 성과 수치를 보여주는 데 더 초점이 맞춰져 있습니다.
 
 하지만 질적 분석은 성과 수치가 아니라 게시물의 품질에 초점을 맞춥니다. 이런 분석에서 얻을 수 있는 인사이트 예시:
 

@@ -1,4 +1,4 @@
-# 건강 및 증상 추적기
+﻿# 건강 및 증상 추적기
 
 음식 민감성을 파악하려면 장기간 일관된 기록이 필요하지만, 이는 유지하기 번거롭습니다. 기록할 수 있도록 리마인더가 필요하고, 패턴을 찾아줄 분석이 필요합니다.
 
@@ -38,4 +38,4 @@ Every Sunday, analyze the past week's log and identify patterns:
 Post the analysis to the health-tracker topic.
 ```
 
-4. Optional: Add a memory file for OpenClaw to track known triggers and update it as patterns emerge.
+4. 선택 사항: OpenClaw이 알려진 유발 요인을 추적하고 패턴이 나타날 때마다 업데이트하도록 메모리 파일을 추가하세요.

@@ -1,4 +1,4 @@
-# 멀티 에이전트 콘텐츠 팩토리
+﻿# 멀티 에이전트 콘텐츠 팩토리
 
 콘텐츠 제작자로서 당신은 여러 플랫폼에 걸쳐 리서치, 작성, 디자인을 동시에 처리하느라 바쁩니다. 트렌드 주제 찾기, 스크립트 작성, 썸네일 생성 등 각 단계는 하루를 잡아먹습니다. 전문화된 에이전트 팀이 밤사이에 이 모든 것을 처리한다면 어떨까요?
 
@@ -67,7 +67,7 @@ to produce tweet threads instead of video scripts.
 
 ## 기반
 
-Inspired by [Alex Finn's video on life-changing OpenClaw use cases](https://www.youtube.com/watch?v=41_TNGDDnfQ).
+[Alex Finn의 삶을 바꾸는 OpenClaw 활용 사례 영상](https://www.youtube.com/watch?v=41_TNGDDnfQ)에서 영감을 받았습니다.
 
 ## 관련 링크
 

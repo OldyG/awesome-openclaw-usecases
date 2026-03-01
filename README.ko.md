@@ -25,7 +25,7 @@ OpenClaw 적응의 병목을 해결합니다: 중요한 것은 ~~skills~~이 아
 
 > **경고:** 여기서 참조하는 OpenClaw 스킬과 타사 종속성은 치명적인 보안 취약점을 가질 수 있습니다. 많은 사용 사례가 커뮤니티 제작 스킬, 플러그인, 외부 리포지토리로 연결되며 이는 **이 목록의 유지관리자가 감사하지 않았을 수 있습니다**. 항상 스킬 소스 코드를 검토하고 요청된 권한을 확인하며 API 키나 자격증명을 하드코딩하지 마세요. 보안 책임은 전적으로 사용자에게 있습니다.
 
-## Social Media
+## 소셜 미디어
 
 | Name | Description |
 |------|-------------|
@@ -34,7 +34,7 @@ OpenClaw 적응의 병목을 해결합니다: 중요한 것은 ~~skills~~이 아
 | [X Account Analysis](usecases/x-account-analysis.ko.md) | X 계정에 대한 질적 분석을 제공합니다.|
 | [Multi-Source Tech News Digest](usecases/multi-source-tech-news-digest.ko.md) | 109개 이상의 소스(RSS, Twitter/X, GitHub, 웹 검색)에서 품질 점수화된 기술 뉴스를 자동 집계하여 자연어로 전달합니다. |
 
-## Creative & Building
+## 크리에이티브 & 빌딩
 
 | Name | Description |
 |------|-------------|
@@ -44,14 +44,14 @@ OpenClaw 적응의 병목을 해결합니다: 중요한 것은 ~~skills~~이 아
 | [Autonomous Game Dev Pipeline](usecases/autonomous-game-dev-pipeline.ko.md) | 교육용 게임 개발의 전체 수명주기 관리: 백로그 선택부터 구현, 등록, 문서화, git 커밋까지. "Bugs First" 정책을 적용합니다. |
 | [Podcast Production Pipeline](usecases/podcast-production-pipeline.ko.md) | 팟캐스트 워크플로 전체를 자동화합니다 — 게스트 리서치, 에피소드 아웃라인, 쇼 노트, 소셜 미디어 홍보까지 발행 준비된 자산으로 만듭니다. |
 
-## Infrastructure & DevOps
+## 인프라 & DevOps
 
 | Name | Description |
 |------|-------------|
 | [n8n Workflow Orchestration](usecases/n8n-workflow-orchestration.ko.md) | 웹후크를 통해 n8n 워크플로로 API 호출을 위임합니다 — 에이전트는 자격증명을 직접 다루지 않으며 모든 통합은 시각적이고 잠그기 가능합니다. |
 | [Self-Healing Home Server](usecases/self-healing-home-server.ko.md) | SSH 접근, 자동화된 cron job, 자기복구 기능을 갖춘 항상 켜진 인프라 에이전트를 홈 네트워크에서 운영합니다. |
 
-## Productivity
+## 생산성
 
 | Name | Description |
 |------|-------------|
@@ -74,7 +74,7 @@ OpenClaw 적응의 병목을 해결합니다: 중요한 것은 ~~skills~~이 아
 | [Second Brain](usecases/second-brain.ko.md) | 봇에게 텍스트로 무엇이든 기억시키고 커스텀 Next.js 대시보드에서 모든 기억을 검색하세요. |
 | [Event Guest Confirmation](usecases/event-guest-confirmation.ko.md) | 참석자 목록을 전화로 하나씩 확인하고 메모를 수집해 요약을 작성합니다 — AI 음성 통화로 완전 자동화됩니다. |
 
-## Research & Learning
+## 리서치 & 학습
 
 | Name | Description |
 |------|-------------|
@@ -84,19 +84,19 @@ OpenClaw 적응의 병목을 해결합니다: 중요한 것은 ~~skills~~이 아
 | [Pre-Build Idea Validator](usecases/pre-build-idea-validator.ko.md) | 새로운 것을 만들기 전에 GitHub, HN, npm, PyPI, Product Hunt를 자동으로 스캔합니다 — 시장이 치열하면 중단하고 여유가 있으면 진행합니다. |
 | [Semantic Memory Search](usecases/semantic-memory-search.ko.md) | OpenClaw 마크다운 메모리 파일에 벡터 기반 의미 검색을 추가하고 하이브리드 검색과 자동 동기화를 제공합니다. |
 
-## Finance & Trading
+## 금융 & 트레이딩
 
 | Name | Description |
 |------|-------------|
 | [Polymarket Autopilot](usecases/polymarket-autopilot.ko.md) | 백테스팅, 전략 분석, 일일 성과 보고서가 포함된 예측시장용 자동 페이퍼 트레이딩입니다. |
 
-## 🤝 Contributing
+## 🤝 기여하기
 
 기여를 환영합니다! 가이드라인은 [CONTRIBUTING.md](CONTRIBUTING.md) 를 참고하세요.
 
-- Add a new usecase
-- Improve existing ones
+- 새로운 사용 사례 추가
+- 기존 사용 사례 개선
 
 > 적어도 하루 이상 실제로 사용해보고 제대로 작동함을 확인한 사용 사례만 제출해주세요. 우리의 목표는 삶을 정말로 나아지게 하는 실용적인 아이디어입니다.
 >
-> **Note:** We do not accept use cases related to crypto.
+> **참고:** 암호화폐 관련 사용 사례는 허용되지 않습니다.
