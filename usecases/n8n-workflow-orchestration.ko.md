@@ -1,4 +1,4 @@
-# OpenClaw + n8n 워크플로 오케스트레이션
+﻿# OpenClaw + n8n 워크플로 오케스트레이션
 
 AI 에이전트에게 직접 API 키를 관리하게 하고 외부 서비스를 호출하게 하는 것은 보안 사고로 이어질 가능성이 큽니다. 새로운 통합이 추가될 때마다 `.env.local`에 자격증명이 늘어나고, 에이전트가 실수로 유출하거나 오용할 수 있는 표면이 커집니다.
 
@@ -47,7 +47,7 @@ OpenClaw가 모든 것을 직접 처리하면 세 가지 복합적인 문제가 
 
 ### 옵션 1: 사전 구성된 Docker 스택
 
-A community-maintained Docker Compose setup ([openclaw-n8n-stack](https://github.com/caprihan/openclaw-n8n-stack)) pre-wires everything on a shared Docker network:
+커뮤니티에서 관리하는 Docker Compose 설정([openclaw-n8n-stack](https://github.com/caprihan/openclaw-n8n-stack))이 공유 Docker 네트워크에서 모든 것을 미리 구성합니다:
 
 ```bash
 git clone https://github.com/caprihan/openclaw-n8n-stack.git
@@ -57,17 +57,17 @@ cp .env.template .env
 docker-compose up -d
 ```
 
-This gives you:
-- OpenClaw on port 3456
-- n8n on port 5678
-- Shared Docker network so OpenClaw can call `http://n8n:5678/webhook/...` directly
-- Pre-built workflow templates (multi-LLM fact-checking, email triage, social monitoring)
+이 구성으로 얻을 수 있는 것:
+- OpenClaw, 포트 3456에서 접근 가능
+- n8n, 포트 5678에서 접근 가능
+- OpenClaw가 `http://n8n:5678/webhook/...`를 직접 호출할 수 있는 공유 Docker 네트워크
+- 사전 구축된 워크플로 템플릿(다중 LLM 사실 확인, 이메일 분류, 소셜 모니터링)
 
 ### 옵션 2: 수동 설정
 
-1. Install n8n (`npm install n8n -g` or run via Docker)
-2. Configure OpenClaw to know the n8n base URL
-3. Add this to your AGENTS.md:
+1. n8n을 설치하세요 (`npm install n8n -g` 또는 Docker로 실행)
+2. OpenClaw가 n8n 기본 URL을 알도록 구성하세요
+3. 다음을 AGENTS.md에 추가하세요:
 
 ```text
 ## n8n Integration Pattern
@@ -91,17 +91,17 @@ curl -X POST http://n8n:5678/webhook/{workflow-name} \
 
 ## 핵심 통찰
 
-- **Three wins in one**: Observability (visual UI), security (credential isolation), and performance (deterministic workflows don't burn tokens)
-- **Lock after testing**: The "build → test → lock" cycle is critical — without locking, the agent can silently modify workflows
-- **n8n has 400+ integrations**: Most external services you'd want to connect already have n8n nodes, saving the agent from writing custom API calls
-- **Audit trail for free**: n8n logs every workflow execution with input/output data
+- **세 가지 장점**: 가시성(시각적 UI), 보안(자격증명 격리), 성능(결정론적 워크플로는 LLM 토큰을 소모하지 않음)
+- **테스트 후 잠금**: "빌드 → 테스트 → 잠금" 사이클이 중요합니다. 잠금을 하지 않으면 에이전트가 워크플로를 조용히 변경할 수 있습니다
+- **n8n은 400개 이상의 통합을 제공**: 연결하려는 대부분의 외부 서비스에 이미 n8n 노드가 있어 에이전트가 맞춤형 API 호출을 작성할 필요가 없습니다
+- **감사 로그 제공**: n8n은 각 워크플로 실행의 입력/출력 데이터를 기록합니다
 
-## Inspired By
+## 영감을 준 것
 
-This pattern was described by [Simon Høiberg](https://x.com/SimonHoiberg/status/2020843874382487959), who outlined three reasons this approach beats letting OpenClaw handle API interactions directly: observability through n8n's visual UI, security through credential isolation, and performance by running deterministic sub-tasks as workflows instead of LLM calls. The [openclaw-n8n-stack](https://github.com/caprihan/openclaw-n8n-stack) repository provides a ready-to-run Docker Compose setup implementing this pattern.
+이 패턴은 [Simon Høiberg](https://x.com/SimonHoiberg/status/2020843874382487959)가 설명했습니다. 그가 제시한 이유는 이 접근법이 OpenClaw가 API 상호작용을 직접 처리하게 두는 것보다 우수한 세 가지 근거입니다: n8n의 시각적 UI를 통한 가시성, 자격증명 격리를 통한 보안, 그리고 결정론적 하위 작업을 LLM 호출 대신 워크플로로 실행함으로 인한 성능 향상입니다. [openclaw-n8n-stack](https://github.com/caprihan/openclaw-n8n-stack) 저장소는 이 패턴을 구현한 즉시 실행 가능한 Docker Compose 설정을 제공합니다.
 
-## Related Links
+## 관련 링크
 
 - [n8n Documentation](https://docs.n8n.io/)
-- [openclaw-n8n-stack (Docker setup)](https://github.com/caprihan/openclaw-n8n-stack)
+- [openclaw-n8n-stack (Docker 설정)](https://github.com/caprihan/openclaw-n8n-stack)
 - [n8n Webhook Trigger Docs](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/)

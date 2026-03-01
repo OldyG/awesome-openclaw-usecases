@@ -111,5 +111,3 @@ You are my dynamic dashboard manager. Every 15 minutes, run a cron job to:
 
 - [Parallel Processing with Sub-agents](https://docs.openclaw.ai/subagents)
 - [Dashboard Design Principles](https://www.nngroup.com/articles/dashboard-design/)
-
-(End of file - total 113 lines)

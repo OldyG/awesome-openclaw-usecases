@@ -121,5 +121,3 @@ Telegram/Slack 가족 채널로 전달합니다.
 - [Google Calendar API](https://developers.google.com/calendar)
 - [Apple Calendar (EventKit)](https://developer.apple.com/documentation/eventkit)
 - [OpenClaw Showcase — Calendar Testimonials](https://openclaw.ai/showcase)
-
-(End of file - total 123 lines)

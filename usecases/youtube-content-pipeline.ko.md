@@ -1,4 +1,4 @@
-# YouTube 콘텐츠 파이프라인
+﻿# YouTube 콘텐츠 파이프라인
 
 일일 YouTube 크리에이터로서 웹과 X/Twitter 전반에서 신선하고 시기적절한 영상 아이디어를 찾는 일은 많은 시간이 듭니다. 이미 다룬 주제를 추적하면 중복을 막고 트렌드보다 한발 앞서갈 수 있습니다.
 
@@ -46,5 +46,3 @@ CREATE TABLE pitches (
 3. 내 지식베이스를 조회합니다
 4. Video Pipeline에 전체 개요가 포함된 Asana 카드를 생성합니다
 ```
-
-(End of file - total 48 lines)

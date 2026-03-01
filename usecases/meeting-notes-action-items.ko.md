@@ -79,5 +79,3 @@ new .txt or .vtt files. When you find one:
 - [Jira REST API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/)
 - [Linear API](https://developers.linear.app/)
 - [Slack API](https://api.slack.com/)
-
-(End of file - total 82 lines)

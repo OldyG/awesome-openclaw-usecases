@@ -115,6 +115,3 @@ Once created, for every complex task I give you:
 
 ## 관련 링크
 - [Todoist REST API Documentation](https://developer.todoist.com/rest/v2/)
-
-
-(End of file - total 118 lines)
